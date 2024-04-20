@@ -89,7 +89,7 @@ export const PromptVersionEditorProvider = ({ children }) => {
     // Take a snapshot of the initial values.
     // This will then be used to determine if there are changes to commit.
     if (isDraft) {
-      const service = PromptService.OpenAiChatCompletion;
+      const service = PromptService.ChatQwenAICompletion;
       const settings = getServiceDefaultSettings(service);
 
       initialValues.current = {

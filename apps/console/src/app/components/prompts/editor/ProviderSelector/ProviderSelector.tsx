@@ -32,7 +32,7 @@ export const ProviderSelector = () => {
   const renderProvider = (provider: ProviderProps) => {
     const isAvailable = provider.value === PromptService.OpenAiChatCompletion;
     return {
-      disabled: !isAvailable,
+      disabled: false,
       value: provider.value,
       label: (
         <div>

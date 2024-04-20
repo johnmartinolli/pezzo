@@ -5,8 +5,12 @@ import { PromptService } from "@pezzo/types";
 import { ProviderSettingsSchemaRenderer } from "./ProviderSettings/ProviderSettingsSchemaRenderer";
 import { openAIChatCompletionSettingsDefinition } from "./ProviderSettings/providers/openai-chat-completion";
 import { azureOpenAIChatCompletionSettingsDefinition } from "./ProviderSettings/providers/azure-openai-chat-completion";
+import { qwenAIChatCompletionSettingsDefinition } from "./ProviderSettings/providers/qwenai-chat-completion";
+import { tongyiChatCompletionSettingsDefinition } from "./ProviderSettings/providers/tongyi-chat-completion";
 
 const providerSettings = {
+  [PromptService.ChatQwenAICompletion]: qwenAIChatCompletionSettingsDefinition,
+  [PromptService.ChatTongyiCompletion]: tongyiChatCompletionSettingsDefinition,
   [PromptService.OpenAIChatCompletion]: openAIChatCompletionSettingsDefinition,
   [PromptService.AzureOpenAIChatCompletion]:
     azureOpenAIChatCompletionSettingsDefinition,

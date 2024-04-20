@@ -21,13 +21,18 @@ export const providersList: ProviderProps[] = [
         style={{ backgroundColor: "#74AA9C", padding: 2 }}
       />
     ),
-    value: PromptService.OpenAiChatCompletion,
-    label: promptProvidersMapping[PromptService.OpenAiChatCompletion].name,
+    value: PromptService.ChatQwenAICompletion,
+    label: promptProvidersMapping[PromptService.ChatQwenAICompletion].name,
   },
   {
-    image: <Icon src={AzureOpenAILogo} style={{ padding: 2 }} />,
-    value: PromptService.AzureOpenAiChatCompletion,
-    label: promptProvidersMapping[PromptService.AzureOpenAiChatCompletion].name,
+    image: <Icon src={OpenAILogo} style={{ padding: 2 }} />,
+    value: PromptService.ChatTongyiCompletion,
+    label: promptProvidersMapping[PromptService.ChatTongyiCompletion].name,
+  },
+  {
+    image: <Icon src={OpenAILogo} style={{ padding: 2 }} />,
+    value: PromptService.OpenAiChatCompletion,
+    label: promptProvidersMapping[PromptService.OpenAiChatCompletion].name,
   },
   {
     image: <Icon src={AnthropicOpenAILogo} style={{ padding: 2 }} />,
