@@ -36,6 +36,11 @@ export const providersList: ProviderProps[] = [
   },
   {
     image: <Icon src={OpenAILogo} style={{ padding: 2 }} />,
+    value: PromptService.ChatQianfanCompletion,
+    label: promptProvidersMapping[PromptService.ChatQianfanCompletion].name,
+  },
+  {
+    image: <Icon src={OpenAILogo} style={{ padding: 2 }} />,
     value: PromptService.OpenAiChatCompletion,
     label: promptProvidersMapping[PromptService.OpenAiChatCompletion].name,
   },

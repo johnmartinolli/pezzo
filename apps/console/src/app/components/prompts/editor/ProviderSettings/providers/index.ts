@@ -4,6 +4,7 @@ import { openAIChatCompletionSettingsDefinition } from "./openai-chat-completion
 import { qwenAIChatCompletionSettingsDefinition } from "./qwenai-chat-completion";
 import { tongyiChatCompletionSettingsDefinition } from "./tongyi-chat-completion";
 import { zhipuAIChatCompletionSettingsDefinition } from "./zhipuai-chat-completion";
+import { qianfanChatCompletionSettingsDefinition } from "./qianfan-chat-completion";
 
 const defaultSettingsMap = {
   [PromptService.ChatQwenAICompletion]:
@@ -11,7 +12,9 @@ const defaultSettingsMap = {
   [PromptService.ChatTongyiCompletion]:
     tongyiChatCompletionSettingsDefinition.defaultSettings,
   [PromptService.ChatZhipuAICompletion]:
-  zhipuAIChatCompletionSettingsDefinition.defaultSettings,
+    zhipuAIChatCompletionSettingsDefinition.defaultSettings,
+  [PromptService.ChatQianfanCompletion]:
+    qianfanChatCompletionSettingsDefinition.defaultSettings,
   [PromptService.OpenAiChatCompletion]:
     openAIChatCompletionSettingsDefinition.defaultSettings,
   [PromptService.AzureOpenAiChatCompletion]:
