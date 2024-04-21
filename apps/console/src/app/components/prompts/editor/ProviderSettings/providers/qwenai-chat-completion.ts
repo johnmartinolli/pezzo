@@ -10,8 +10,6 @@ const defaultSettings: OpenAIProviderSettings = {
   model: "qwen1.5-32b-chat",
   temperature: 0.7,
   top_p: 1,
-  frequency_penalty: 0,
-  presence_penalty: 0,
 };
 
 const generateFormSchema = (settings: OpenAIProviderSettings): FormSchema => {

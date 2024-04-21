@@ -7,10 +7,12 @@ import { openAIChatCompletionSettingsDefinition } from "./ProviderSettings/provi
 import { azureOpenAIChatCompletionSettingsDefinition } from "./ProviderSettings/providers/azure-openai-chat-completion";
 import { qwenAIChatCompletionSettingsDefinition } from "./ProviderSettings/providers/qwenai-chat-completion";
 import { tongyiChatCompletionSettingsDefinition } from "./ProviderSettings/providers/tongyi-chat-completion";
+import { zhipuAIChatCompletionSettingsDefinition } from "./ProviderSettings/providers/zhipuai-chat-completion";
 
 const providerSettings = {
   [PromptService.ChatQwenAICompletion]: qwenAIChatCompletionSettingsDefinition,
   [PromptService.ChatTongyiCompletion]: tongyiChatCompletionSettingsDefinition,
+  [PromptService.ChatZhipuAICompletion]: zhipuAIChatCompletionSettingsDefinition,
   [PromptService.OpenAIChatCompletion]: openAIChatCompletionSettingsDefinition,
   [PromptService.AzureOpenAIChatCompletion]:
     azureOpenAIChatCompletionSettingsDefinition,

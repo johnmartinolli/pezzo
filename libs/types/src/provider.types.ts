@@ -1,6 +1,7 @@
 export enum PromptService {
   ChatQwenAICompletion = 'ChatQwenAICompletion',
   ChatTongyiCompletion = 'ChatTongyiCompletion',
+  ChatZhipuAICompletion = 'ChatZhipuAICompletion',
   OpenAIChatCompletion = "OpenAIChatCompletion",
   AzureOpenAIChatCompletion = "AzureOpenAIChatCompletion",
   AnthropicCompletion = "AnthropicCompletion"
@@ -9,6 +10,7 @@ export enum PromptService {
 export enum Provider {
   QwenAI = "QwenAI",
   Tongyi = "Tongyi",
+  ZhipuAI = "ZhipuAI",
   OpenAI = "OpenAI",
   Azure = "Azure",
   Anthropic = "Anthropic",
@@ -20,6 +22,9 @@ export const providerDetails = {
   },
   [Provider.Tongyi]: {
     name: "Tongyi",
+  },
+  [Provider.ZhipuAI]: {
+    name: "ZhipuAI",
   },
   [Provider.OpenAI]: {
     name: "OpenAI",
@@ -41,6 +46,11 @@ export const promptProvidersMapping = {
   [PromptService.ChatTongyiCompletion]: {
     name: "Tongyi Chat Completion",
     provider: Provider.Tongyi,
+    defaultSettings: {},
+  },
+  [PromptService.ChatZhipuAICompletion]: {
+    name: "ZhipuAI Chat Completion",
+    provider: Provider.ZhipuAI,
     defaultSettings: {},
   },
   [PromptService.OpenAIChatCompletion]: {
